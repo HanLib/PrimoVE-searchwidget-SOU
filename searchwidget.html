@@ -1,0 +1,162 @@
+<!-- Begin searchwidget -->
+<div class="searchwidget" id="watzek">
+
+    <ul class="nav nav-tabs">
+        <li class="active primo"><a data-toggle="tab" href="#primo"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Quick Search</a></li>
+        <li class="books"><a data-toggle="tab" href="#books"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Books & Media</a></li>
+        <!--<li class="eonly"><a data-toggle="tab" href="#eonly"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> E-Resources Only</a></li>-->
+        <li class="articles"><a data-toggle="tab" href="#articles"><span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> Articles & Journals</a></li>
+        <li class="guides"><a data-toggle="tab" href="#guides"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Guides & Databases</a></li>
+    </ul>
+
+    <div class="tab-content">
+
+        <div id="primo" class="tab-pane active">
+            <div class="row">
+                <div class="searchbox col-xs-12">
+                    <form >
+                    <!--<form action="https://watzekdi.net/boleyweb/widget/doSearch.php" method="get">-->
+                        <div class="input-group input-group-lg">
+                            <label class='sr-only' for="quicksearch">Find books, databases, AV materials, and articles in Primo</label>
+                            <input id="quicksearch" type="text" name="q" placeholder="Find books, databases, AV materials, and articles in Primo" class="form-control textbox quickinput" autofocus>
+                            <input type="hidden" name="tab" value="primo" />
+                            <div class="input-group-btn">
+                                <input type="submit" class="btn btn-default swSubmit    "   id="primoTab" value="Go">
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- searchbox-->
+            </div><!-- row-->
+            <div class="row searchopts">
+                <div class="searchextras col-xs-12 text-right">
+                    <a href="https://primo.lclark.edu/primo-explore/search?vid=LCC&lang=en_US&sortby=rank&mode=advanced">Advanced Search</a>
+                </div>
+            </div>
+
+
+        </div><!-- tab-pane-->
+
+
+<!--
+        <div id="eonly" class="tab-pane ">
+            <div class="row">
+                <div class="searchbox col-xs-12">
+                    <form >
+
+                        <div class="input-group input-group-lg">
+                            <label class='sr-only' for="eonly">Find ebooks, databases, and articles in Primo</label>
+                            <input id="eonly" type="text" name="q" placeholder="Find ebooks, databases, and articles in Primo" class="form-control textbox quickinput" autofocus>
+                            <input type="hidden" name="tab" value="primo" />
+                            <div class="input-group-btn">
+                                <input type="submit" class="btn btn-default swSubmit    "   id="eonlyTab" value="Go">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+-->
+        <div id="books" class="tab-pane">
+        <form >
+                <div class="row">
+                    <div class="searchbox col-xs-12">
+                        <div class="input-group input-group-lg">
+                            <input type="text" name="q" placeholder="Find books and AV materials at L&C by keyword" class="form-control textbox primoinput">
+                            <input type="hidden" name="tab" value="books" />
+                            <div class="input-group-btn">
+                                <select class="primoquery form-control input-lg" name="index">
+                                <option selected="selected" value="any">Keyword</option>
+                                <option value="title">Title</option>
+                                <option value="creator">Author</option>
+                                <option value="sub">Subject</option>
+                            </select>
+                                <input type="submit" class="btn btn-default swSubmit"  id="booksTab" value="Go">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row searchopts">
+                    <div class="searchextras scopebuttons col-xs-7 text-left" role="radiogroup">
+                        <span class="lc-local-scope" role="radio"><label class="radio-inline"><input type="radio" name="scope" value="MyInstitution" checked>L&C</label></span>
+                        <span class="summit-scope" role="radio"><label class="radio-inline"><input type="radio" name="scope" value="SUMMIT">Summit</label></span>
+                        <span class="worldcat-scope" role="radio"><label class="radio-inline"><input type="radio" name="scope" value="worldcat">WorldCat</label></span>
+                    </div>
+                    <div class="searchextras col-xs-5 text-right">
+                        <a href="https://primo.lclark.edu/primo-explore/search?vid=LCC&lang=en_US&sortby=rank&mode=advanced">Advanced Search</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="articles" class="tab-pane">
+            <div class="row">
+                <div class="searchbox col-xs-6">
+                <form >
+                <!--<form action="https://watzekdi.net/boleyweb/widget/doSearch.php" method="get">-->
+                        <div class="input-group input-group-lg">
+                            <label class="sr-only" for="articles">Find articles in Primo by keyword</label>
+                            <input id="articles" type="text" name="q" placeholder="Find articles in Primo by keyword" class="form-control textbox journalinput">
+                            <input type="hidden" name="tab" value="journals" />
+                            <input type="hidden" name="resource" value="article" />
+                            <div class="input-group-btn">
+                                <input type="submit" class="btn btn-default swSubmit"  id="articlesTab" value="Go">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="searchbox col-xs-6">
+                <form >
+                <!--<form action="https://watzekdi.net/boleyweb/widget/doSearch.php" method="get">-->
+                        <div class="input-group input-group-lg">
+                          <label class="sr-only" for="journals">Find journals in Primo by title</label>
+                            <input id="journals" type="text" name="q" placeholder="Find journals in Primo by title" class="form-control textbox journalinput">
+                            <input type="hidden" name="tab" value="journals" />
+                            <input type="hidden" name="resource" value="journal" />
+                            <div class="input-group-btn">
+                                <input type="submit" class="btn btn-default swSubmit"  id="journalsTab" value="Go">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row searchopts">
+                <div class="searchextras col-xs-12 text-right">
+                    <a href="https://watzek.account.worldcat.org/profile">Request through Interlibrary Loan</a>
+                </div>
+                <!--
+                <div class="searchextras col-xs-6 text-right">
+                    <a href="/az.php">Subject Databases</a>
+                </div>
+                -->
+            </div>
+        </div>
+
+        <div id="guides" class="tab-pane">
+            <form action="/srch.php" method="get">
+                <div class="row">
+                    <div class="searchbox col-xs-12">
+                        <div class="input-group input-group-lg">
+                          <label class="sr-only" for="libguides">Find guides, databases, and library information</label>
+                            <input id="libguides" type="text" name="q" placeholder="Find guides, databases, and library information" class="form-control textbox">
+                            <div class="input-group-btn">
+                                <input type="submit" class="btn btn-default"  id="searchTab" value="Go">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row searchopts">
+                    <div class="searchextras col-xs-12 text-right">
+                        <a href="/research-guides/subject-guides" class="guides-by-subject">Subject Guides</a>
+                        <span aria-hidden="true"> | </span>
+                        <a href="/research-guides/course-guides" class="guides-by-course">Course Guides</a>
+                        <!--<a href="/az.php">Subject Databases</a>-->
+                        <span aria-hidden="true"> | </span>
+                        <a href="/az.php?t=31639">Databases A-Z</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div> <!-- .searchwidget -->
+<!-- end searchwidget -->
