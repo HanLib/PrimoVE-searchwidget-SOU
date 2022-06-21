@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var primoBase = 'https://alliance-lclark.primo.exlibrisgroup.com/discovery/search?';
+  var primoBase = 'https://primo.lclark.edu/discovery/search?';
   var wcBase="https://watzek.on.worldcat.org/search?";
   var boleyWcBase = "https://lewisclarklaw.on.worldcat.org/search?";
 
