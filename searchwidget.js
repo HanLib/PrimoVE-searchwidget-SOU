@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var primoBase = 'https://primo.lclark.edu/discovery/search?';
+  var primoBase = 'https://alliance-sou.primo.exlibrisgroup.com/discovery/search?';
   var wcBase="https://watzek.on.worldcat.org/search?";
   var boleyWcBase = "https://lewisclarklaw.on.worldcat.org/search?";
 
@@ -13,7 +13,7 @@ $(document).ready(function(){
       case "primoTab":
 
         var kw="any,contains,"+query
-        var opts = { "institution":"01ALLIANCE_LCC","vid":"01ALLIANCE_LCC:LCC","query":kw, "tab": "Everything", "search_scope":"EVERYTHING", "lang":"en_US" };
+        var opts = { "institution":"01ALLIANCE_SOU","vid":"01ALLIANCE_SOU:SOU","query":kw, "tab": "Archives", "search_scope":"SPEC", "lang":"en_US" };
         var getParams = jQuery.param(opts);
         var targetUrl=primoBase+getParams;
         window.location.replace(targetUrl);
